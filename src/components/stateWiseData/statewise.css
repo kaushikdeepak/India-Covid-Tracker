@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet');
+
+
+* {
+    margin:0;
+    padding: 0.5%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}   
+
+.main-heading{
+    text-align: center;
+    text-shadow:cyan;
+    color:darkviolet
+}
+.container-fluid {
+    width: 90%;
+    margin:0 auto;
+}
+.table-responsive{
+    max-height: 2500px;
+    box-shadow: rgba(0,0,0,25) 0px 25px 50px -12px;
+    float:left
+}
+
+td,
+th {
+    position:relative;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem;
+    vertical-align:top;
+    border-top:none;
+}
+
+td:hover::after,
+th:hover::after{
+    content:"";
+    position:absolute;
+    /* background-color: #f2f2f2; */
+    left: 0;
+    top: -5000px;
+    height:5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.table tr td:hover:nth-child(4){
+    background-color: rgb(231,83,12);
+    color:aliceblue;
+    border: 0.5px solid rgb(12,12,12);
+}
+
+.table tr td:hover:nth-child(2){
+    background-color: rgb(246, 244, 82);
+    color:rgb(100, 148, 190);
+    border: 0.5px solid rgb(12,12,12);
+}
+
+.table tr td:hover:nth-child(5){
+    background-color: rgb(246, 244, 82);
+    color:rgb(109, 178, 238);
+    border: 0.5px solid rgb(12,12,12);
+}
+
+.table tr td:hover:nth-child(3){
+    background-color: rgb(117,223,122);
+    color:aliceblue;
+    border: 0.5px solid rgb(12,12,12);
+}
+
+.table tr td:hover{
+    background-color: rgb(184, 238, 238);
+    color:rgb(23, 69, 110);
+    border: 0.5px solid rgb(12,12,12);
+}
+
+.thead-dark{
+    font-weight:bold;
+    background-color: rgb(173, 166, 209);
+    text-transform: uppercase;
+}
